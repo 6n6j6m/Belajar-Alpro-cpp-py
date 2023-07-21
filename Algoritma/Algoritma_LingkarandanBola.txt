@@ -1,0 +1,21 @@
+Program Lingkaran_dan_Bola
+Spesifikasi
+Diketahui phi = 3.14 dan dibaca Jari-jari lingkaran bertipe real, hitunglah keliling lingkaran, luas lingkaran, luas permukaan bola, volume bola. Tampilkan hasil penghitungan yang telah dilakukan
+
+Deklarasi
+phi, jari, k, l, lpb, v : real
+
+Deskripsi
+phi <- 3.14
+write("Masukkan jari-jari :")
+read(jari)
+
+k = 2*phi*jari
+l = phi*(jari*jari)
+lpb = (4*phi)*(jari*jari)
+v = (4*phi*(jari*jari*jari))/3
+
+write("Kelilingnya adalah :", k)
+write("Luasnya adalah :", l)
+write("Luas permukaan bola adalah :", lpb)
+write("Volumenya adalah :", v)

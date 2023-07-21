@@ -1,0 +1,40 @@
+Program Input dan Searching diatas
+
+Spesifikasi
+Dibaca N data Mahasiswa dengan tipe (nim bertipe string, Nama bertipe string, IPK bertipe real), tentukan IPK maks, IPK minimum, Banyak IPK yang lulus(IPK>=2.0). Cari Mahasiswa dengan NIM tertentu, jika ditemukan maka tampilkan Nama dan IPKnya, jika tidak maka tampilkan "mhs tsb tak ditemukan".
+
+Deklarasi
+type mdata : record<nim : string, nama : string, IPK : real>
+i, N : integer
+mahasiswa : array [1..100] of mdata
+hasilcari : boolean
+cari : string
+nmax, nmin, nlulus : float
+
+Deskripsi
+nmax <- -1
+nmin <- 5.0
+nlulus <- 0
+hasilcari <- false
+
+write("Input Banyak data Mahasiswa")
+read(N)
+
+for i <- 1 to N do
+    write("Input nim : ")
+    read(mahasiswa[i].nim)
+
+    write("Input nama : ")
+    read(mahasiswa[i].nama)
+
+    write("input IPK : ")
+    read(mahasiswa[i].IPK)
+
+    if(mahasiswa[i].IPK>=2.0)then
+		nlulus <- nlulus + 1
+		
+	if(mahasiswa[i].IPK>nmax)
+		nmax <- mahasiswa[i].IPK 
+    
+	if(mahasiswa[i].IPK<nmin)
+		nmin <- mahasiswa[i].IPK

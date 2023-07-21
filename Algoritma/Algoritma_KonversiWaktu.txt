@@ -1,0 +1,39 @@
+Program Konversi Waktu
+Spesifikasi
+Dibaca Jam, Menit, Detik dengan tipe integer, lalu Konversikan kedalam bentuk Satuan detik dengan tipe integer. Kemudian Konversikan lagi ke dalam Waktu
+
+Deklarasi 
+jaminput, menitinput, detikinput, total_detik, total_detik_input, jam_hasil, menit_hasil, detik_hasil : integer
+
+Function waktu_ke_detik(input jam, menit, detik : integer, output total_detik : integer)
+    Deklarasi
+        total_detik : integer
+    Deskripsi 
+        total detik <- jam * 3600 + menit * 60 + detik
+        waktu_ke_detik <- total_detik                                                         //ini sama saja dengan return pada bahasa pemrograman
+
+Procedure detik_ke_waktu(input total_detik : integer, output jam_hasil, menit_hasil, detik_hasil : integer)
+    Deklarasi
+        sisa_detik : integer
+    Deskripsi
+        jam <- total_detik / 3600
+        sisa_detik <- total_detik % 3600 
+        menit <- sisa_detik / 60
+        detik <- sisa_detik % 60
+
+Deskripsi
+write("Masukkan Jam : ")
+read(jaminput)
+write("Masukan Menit : ")
+read(menitinput)
+write("Masukan Detik : ")
+read(detikinput)
+
+total_detik <- waktu_ke_detik(jaminput, menitinput, detikinput)
+write("Total detiknya adalah : ", total_detik)
+
+write("Masukkan Total Detik : ")
+read(total_detik_input)
+
+detik_ke_waktu(total_detik_input, jam_hasil, menit_hasil, detik_hasil)
+write("Jam :", jam_hasil, "Menit :", menit_hasil, "Detik :", detik_hasil)

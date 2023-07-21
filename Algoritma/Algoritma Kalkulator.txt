@@ -1,0 +1,30 @@
+Program Kalkulator
+
+Spesifikasi
+Diberikan 4 pilihan yaitu tambah, kurang, bagi, kali. Dibaca dua buah bilangan untuk dihitung pada salah satu operasi aritmatika diatas.
+
+Deklarasi
+a, b, hasil : float/real
+pilih : integer
+
+Deskripsi
+write("Program Kalkulator")
+write("1. Tambah")
+write("2. Kurang")
+write("3. Kali")
+write("4. Bagi")
+	
+read(a,b)
+read(pilih)
+
+case(pilih)
+	pilih = 1:
+		hasil = a + b
+	pilih = 2:
+		hasil = a - b
+	pilih = 3:
+		hasil = a * b
+	pilih = 4:
+		hasil = a / b
+
+print("Hasilnya adalah : ", hasil)	
