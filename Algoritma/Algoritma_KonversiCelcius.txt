@@ -1,0 +1,28 @@
+Program Konversi_suhu_Celcius_ke_suhu_berbeda
+Spesifikasi
+Dibaca suhu Celcius bertipe real, kemudian pilih untuk mengkonversikannya ke suhu 1.Reamur, 2.Fahrenheit, 3.Kelvin, 4.Rankine.
+Tampilkan suhu dalam celcius dan suhu yang sudah dikonversikan
+
+Deklarasi
+suhu, hasilkonveris : real
+pilih : integer
+
+Deskripsi
+write("Pilih jenis konversi (1, 2, 3, atau 4): ")
+read("pilih")
+
+write(Masukkan besar suhu dalam Celsius: ")
+read(suhu)
+
+if(pilih = 1)then
+    hasilkonversi <- (4.0 / 5.0) * suhu
+    write(suhu, " Celcius = ", hasilkonversi, " Reamur")
+else if(pilih = 2)then
+    hasilkonversi <- (9.0 / 5.0) * suhu + 32
+    write(suhu, " Celcius = ", hasilkonversi, " Fahrenheit")
+else if(pilih = 3)then
+    hasilkonversi <- suhu + 273.15
+    write(suhu, " Celcius = ", hasilkonversi, " Kelvin")
+else if(pilih = 3)then
+    hasilkonversi <- ((suhu + 273.15) * 9.0) / 5.0
+    write(suhu, " Celcius = ", hasilkonversi, " Rankine")

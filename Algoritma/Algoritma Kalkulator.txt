@@ -19,12 +19,12 @@ read(pilih)
 
 case(pilih)
 	pilih = 1:
-		hasil = a + b
+		hasil <- a + b
 	pilih = 2:
-		hasil = a - b
+		hasil <- a - b
 	pilih = 3:
-		hasil = a * b
+		hasil <- a * b
 	pilih = 4:
-		hasil = a / b
+		hasil <- a / b
 
-print("Hasilnya adalah : ", hasil)	
+print("Hasilnya adalah : ", hasil)
