@@ -1,8 +1,8 @@
 N = int(input("Input N: "))
 mahasiswa = []
-nmax = -1
-nmin = 5.0
-nlulus = 0
+nmax = -1 #Data sentinel
+nmin = 5.0 #Data sentinel
+nlulus = 0 
 
 for i in range(N):
     print("Data Mahasiswa ke-", i+1)
