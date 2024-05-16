@@ -10,7 +10,7 @@ struct mdata {
     string nama;
     string nim;
     float IPK;
-};
+};	
 
 int main(){
 	int i,N;

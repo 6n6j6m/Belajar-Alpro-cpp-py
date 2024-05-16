@@ -1,0 +1,11 @@
+install.packages("tidyverse")
+remove.packages("rlang")
+install.packages("rlang")
+library(tidyverse)
+    devtools::install_github("tidyverse/tidyverse")
+install.packages("cli")
+.libPaths()
+remove.packages("rlang")
+
+install.packages("rlang")
+library(tidyverse)
